@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
@@ -64,18 +64,18 @@
                                 <img src="./assets/img/notify-login.png" alt="">
                                 <p>Đăng nhập để xem thông báo</p>
                                 <button class="notify__btn">Đăng Ký</button>
-                                <button class="notify__btn">Đăng Nhập</button>
+                                <button class="notify__btn js-btnLogin">Đăng Nhập</button>
                             </div>
                         </li>
                         <li class="header__nav-item">
                             <a href="#"><i class="far fa-question-circle"></i>Hỗ trợ</a>
                         </li>
                         <li class="header__nav-item">
-                            <a style="font-weight: bold;" href="#">Đăng ký</a>
+                            <button class="reset-btn btn-nav " id="btnSignin" style="font-weight: bold;">Đăng ký</button>
                         </li>
                         <div class="line--separator"></div>
                         <li class="header__nav-item">
-                            <a style="font-weight: bold;" href="#">Đăng nhập</a>
+                            <button class="reset-btn btn-nav js-btnLogin" id="btnLogin" style="font-weight: bold;">Đăng nhập</button>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +92,17 @@
                         <input type="text" id="search" placeholder="TAKA - chống dịch không lo về giá" name="search">
                         <div class="icon-search"><i class="fas fa-search"></i></div>
                     </div>
-                    <div class="icon-cart"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="icon-cart notify popup">
+                        <i class="icon-cart-none fas fa-shopping-cart">
+                            <!-- <i class="icon-cart-yes fas fa-circle"></i> -->
+                        <span class="icon-cart-yes">2</span>
+                        </i>
+                        <div class="notify-cart popup-content">
+                            <p>Giỏ hàng trống</p>
+                            <p>Lười làm</p>
+                            <p>:))</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -106,6 +116,60 @@
 
         </footer>
     </div>
+
+    <!-- modal login -->
+    <div class="modal-login ">
+        <div class="modal">
+            <div class="js-modal-close close-modal">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="heding-modal">Đăng nhập</div>
+            <form action="">
+                <div class="body-modal">
+                    <input required type="text" name="name" id="name" placeholder="User name">
+                    <input required type="password" name="pass" id="pass-login" placeholder="Password">
+                    <button class="btn-pay opacity--8">Login</button>
+                    <p>Quên mật khẩu? </p>
+                    <div class="IFLxoy">
+                        <div class="line-spearator"></div>
+                        <span class="or-separator">HOẶC</span>
+                        <div class="line-spearator"></div>
+                    </div>
+                    <div class="login-with">
+                        <button class="login-with-btn opacity--8"> <i class="fab fa-facebook"></i> Facebook</button>
+                        <button class="login-with-btn opacity--8"> <i class="fab fa-google"></i> Google</button>
+                        <button class="login-with-btn opacity--8"> <i class="fab fa-apple"></i> Apple</button>
+                    </div>
+                </div>
+            </form>
+            <!-- <footer class="footer-modal">
+                <p>Need <a href="#">help?</a></p>
+            </footer> -->
+
+
+        </div>
+
+    </div>
+    <script>
+        const btnLogins = document.querySelectorAll('.js-btnLogin')
+        const modal = document.querySelector('.modal-login')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showModalLogin() {
+            // alert('hoang')
+            modal.classList.add('modal-show')
+        }
+
+        function closeModal() {
+            // alert('hoang')
+            modal.classList.remove('modal-show')
+        }
+        for (btnLogin of btnLogins) {
+            btnLogin.addEventListener('click', showModalLogin)
+        }
+        // btnLogin.addEventListener('click', showModalLogin)
+        modalClose.addEventListener('click', closeModal)
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,469 @@
+    .opacity--8:hover {
+        opacity: 0.8;
+    }
+    
+    .reset-btn {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    
+    .header {
+        height: 120px;
+        background-image: linear-gradient( -180deg, #2d46f5, #2dabf5);
+    }
+    
+    .header__navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .header__nav-list {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+    /* .header__nav-list li:hover, */
+    
+    .header__nav-list li i:hover,
+    .header__nav-list li button:hover,
+    .header__nav-list li a:hover {
+        opacity: 0.85;
+        cursor: pointer;
+    }
+    
+    .header__nav-item,
+    .header__nav-item a {
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    
+    .header__nav-item--no-poiter,
+    .header__nav-item--no-poiter:hover {
+        cursor: text;
+    }
+    /* vách ngăn */
+    
+    .line--separator {
+        height: 1.3rem;
+        border-right: rgba(255, 255, 255, 0.5) solid 1px;
+    }
+    
+    .header__nav-item {
+        padding: 4px 8px;
+        margin-top: -8px;
+    }
+    
+    .header__nav-item a i {
+        padding: 0 4px;
+        font-size: 1.6rem;
+    }
+    
+    .header__nav-item .btn-nav {
+        color: white;
+    }
+    /* tooltip */
+    
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent var(--white-color) transparent;
+    }
+    
+    .header__nav-list li .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+    /* popup */
+    
+    .popup {
+        position: relative;
+    }
+    
+    .popup-content {
+        display: none;
+        top: 3rem;
+        position: absolute;
+        border: rgba(0, 0, 0, 0.1) 1px solid;
+        background-color: #fff;
+        animation: popup-nav ease .2s;
+        will-change: opacity, transform;
+    }
+    
+    .popup-content>img {
+        height: 80%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .header__nav-list li:hover .popup-content {
+        display: flex;
+        background-color: #e1f7ff;
+        opacity: 1;
+        z-index: 1;
+        cursor: default;
+    }
+    /* popup QR-code */
+    
+    .notify-qrcode {
+        left: -85%;
+        top: 3rem;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .popup .notify-qrcode::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 42%;
+        margin-left: -5px;
+        border-width: 13px;
+        border-style: solid;
+        border-color: transparent transparent #e1f7ff transparent;
+    }
+    
+    .popup .notify-login::after,
+    .popup .notify-cart::after,
+    .popup .notify-qrcode::after {
+        content: "";
+        display: block;
+        margin: -15px 0px 0 0;
+        width: 185px;
+        right: 0px;
+        top: 0;
+        /* background-color: violet; */
+        height: 40px;
+        position: absolute;
+    }
+    
+    .notify-qrcode .store-app img {
+        width: 100%;
+        padding: 4px;
+        margin-top: 220px;
+    }
+    /* Notify login */
+    
+    .notify-login {
+        right: 0;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .popup .notify-login::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 7%;
+        margin-left: -5px;
+        border-width: 13px;
+        border-style: solid;
+        border-color: transparent transparent #e1f7ff transparent;
+    }
+    
+    .notify-login>img {
+        height: 50%;
+        top: 35%;
+    }
+    
+    .notify-login p {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+    }
+    
+    .notify-login .notify__btn {
+        /* position: absolute; */
+        width: 50%;
+        height: 4rem;
+        padding: 0px;
+        margin: calc(300px - 4rem) 0 0 0px;
+        border: none;
+        cursor: pointer;
+        background-color: var( --color-base);
+        color: var(--white-color);
+        font-size: 1.6rem;
+        border-radius: 0;
+    }
+    
+    @keyframes popup-nav {
+        from {
+            transform: scale(0) translateX(100%) translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1) translateX(0%) translateY(0%);
+            opacity: 1;
+        }
+    }
+    
+    .notify-login .notify__btn:hover {
+        opacity: 0.8;
+    }
+    /* modal Login */
+    
+    .modal-login {
+        font-size: 1.5rem;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-login i {
+        font-size: 2.5rem;
+    }
+    
+    .modal-login.modal-show {
+        display: block;
+    }
+    
+    .modal-login .modal {
+        width: 40%;
+        height: 80vh;
+        background-color: white;
+        box-shadow: 0 0 4px 0 #333;
+        margin: 6vh auto 0 auto;
+        position: relative;
+        animation: modalOpen ease 0.5s;
+    }
+    
+    .modal-login .close-modal {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        padding: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .modal-login .close-modal:hover {
+        background-color: rgba(253, 253, 253, 0.5);
+        color: black;
+    }
+    
+    .modal-login .heding-modal {
+        background-image: linear-gradient( -180deg, #2d46f5, #2dabf5);
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 45px;
+        text-align: center;
+        color: white;
+        letter-spacing: 4px;
+        padding: 44px;
+    }
+    
+    .modal-login .body-modal {
+        margin: 1rem 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .modal-login .body-modal>input {
+        padding: 10px 10px;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .modal-login .body-modal p {
+        margin: -18px 0px;
+        cursor: pointer;
+    }
+    
+    .modal-login .body-modal p:hover {
+        opacity: 0.8;
+    }
+    
+    .modal-login .btn-pay {
+        height: 48px;
+        margin: 26px 0;
+        border: none;
+        background-color: var( --color-base);
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .modal-login .login-with {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .IFLxoy {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 2rem;
+    }
+    
+    .IFLxoy .line-spearator {
+        height: 1px;
+        width: 100%;
+        background-color: #dbdbdb;
+        flex: 1;
+    }
+    
+    .IFLxoy .or-separator {
+        color: #ccc;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    .login-with .login-with-btn {
+        width: 30%;
+        background: var(--color-base);
+        border: none;
+        color: var(--white-color);
+        padding: 12px 0px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    .login-with .login-with-btn i {
+        font-size: inherit;
+    }
+    
+    @keyframes modalOpen {
+        from {
+            opacity: 0;
+            transform: translateY(-150px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* logo */
+    
+    .header-with-search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 92px;
+        margin: 0 0 0 4rem;
+    }
+    
+    .header-with-search .logo {
+        width: 100px;
+    }
+    /* search */
+    
+    .header-with-search .header-search {
+        height: 3.2rem;
+        margin: 0px 5rem;
+        width: 100%;
+        display: flex;
+        border-radius: 2px;
+        background-color: white;
+        align-items: center;
+        padding: 4px 16px;
+    }
+    
+    #search {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    
+    .header-with-search .icon-search {
+        font-size: 2rem;
+        padding-left: 16px;
+        color: var( --color-base);
+    }
+    
+    .header-with-search .icon-search:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    .header-with-search .icon-cart {
+        width: 250px;
+        height: 3.2rem;
+        font-size: 3.2rem;
+        color: white;
+    }
+    
+    .header-with-search .icon-cart:hover .popup-content {
+        display: block;
+    }
+    
+    .icon-cart-none {
+        position: relative;
+    }
+    
+    .icon-cart-yes {
+        color: white;
+        top: -8px;
+        right: -8px;
+        position: absolute;
+        font-size: 1.5rem;
+        background-color: red;
+        font-weight: 300;
+        padding: 2px 6px;
+        border-radius: 50%;
+        border: none;
+        /* visibility: hidden; */
+    }
+    
+    .icon-cart .notify-cart {
+        width: 500px;
+        right: 80%;
+        top: 44px;
+        min-height: 300px;
+        text-align: center;
+        font-size: 2rem;
+        color: #666;
+        box-shadow: 1px 1px 4px 0px #333;
+    }
+    
+    .popup .notify-cart::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        margin-left: -5px;
+        border-width: 13px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+    }
