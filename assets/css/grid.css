@@ -21,7 +21,7 @@
     margin-right: -4px;
 }
 
-.hl-row.no-gutters {
+.hl-wide .hl-row.no-gutters {
     margin-left: 0;
     margin-right: 0;
 }
@@ -38,6 +38,11 @@
 
 .c-0 {
     display: none;
+}
+
+.c-0-5 {
+    flex: 0 0 4.11111%;
+    max-width: 4.11111%;
 }
 
 .c-1 {

@@ -4,6 +4,16 @@
     .hide-on-mobile-tablet {
         display: none;
     }
+    .header {
+        height: 100px;
+    }
+    .header-with-search {
+        height: 100%;
+    }
+    #search {
+        max-width: 80%;
+        padding: 0 8px;
+    }
 }
 
 
@@ -19,7 +29,16 @@
 /* mobile */
 
 @media (max-width:739px) {
+    .header-with-search .logo {
+        display: none;
+    }
     .hide-on-mobile {
         display: none;
+    }
+    .header-with-search {
+        justify-content: flex-end;
+    }
+    .icon-cart .notify-cart {
+        max-width: 50vw;
     }
 }
