@@ -242,6 +242,7 @@
     /* modal Login */
     
     .modal-login {
+        z-index: 99;
         font-size: 1.5rem;
         display: none;
         position: fixed;
