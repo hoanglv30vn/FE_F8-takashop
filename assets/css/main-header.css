@@ -11,6 +11,11 @@
     
     .header {
         height: 120px;
+        max-width: 1200px;
+        width: 100%;
+        position: fixed;
+        margin-top: -124px;
+        z-index: 2;
         background-image: linear-gradient( -180deg, #2d46f5, #2dabf5);
     }
     
@@ -88,7 +93,7 @@
         border-radius: 6px;
         padding: 5px 0;
         position: absolute;
-        z-index: 1;
+        z-index: 9;
         top: 150%;
         left: 50%;
         margin-left: -60px;
@@ -112,7 +117,7 @@
     
     .popup {
         position: relative;
-        z-index: 1;
+        z-index: 9;
     }
     
     .popup-content {
@@ -137,7 +142,7 @@
         display: flex;
         background-color: #e1f7ff;
         opacity: 1;
-        z-index: 1;
+        z-index: 9;
         cursor: default;
     }
     /* popup QR-code */

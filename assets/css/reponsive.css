@@ -42,3 +42,26 @@
         max-width: 50vw;
     }
 }
+
+
+/* header reponsive */
+
+
+/* 
+@media (min-width: 740px) {}
+
+@media (min-width: 1113px) {}
+
+@media (min-width: 1024px) {} */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header {
+        width: 644px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1239px) {
+    .header {
+        width: 984px;
+    }
+}
