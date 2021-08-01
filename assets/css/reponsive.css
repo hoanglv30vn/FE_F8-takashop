@@ -48,7 +48,7 @@
 
 
 /* 
-@media (min-width: 740px) {}
+
 
 @media (min-width: 1113px) {}
 
@@ -63,5 +63,11 @@
 @media (min-width: 1024px) and (max-width:1239px) {
     .header {
         width: 984px;
+    }
+}
+
+@media (max-width: 740px) {
+    .pagination-link {
+        padding: 8px 8px;
     }
 }

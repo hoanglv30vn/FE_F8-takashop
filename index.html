@@ -18,6 +18,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
+    <style>
+        .footer {
+            /* text-transform: uppercase; */
+            background-color: #444;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            height: 180px;
+            letter-spacing: 1rem;
+            font-size: 2rem;
+            line-height: 180px;
+            border-top: 15px solid var(--color-base);
+        }
+        
+        @media (min-width: 740px) and (max-width: 1023px) {
+            .footer {
+                height: 180px;
+                letter-spacing: 2rem;
+                font-size: 3rem;
+                line-height: 180px;
+            }
+        }
+        
+        @media (min-width: 1024px) and (max-width:1239px) {
+            .footer {
+                letter-spacing: 4rem;
+                height: 250px;
+                font-size: 3rem;
+                line-height: 250px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -174,6 +206,29 @@
                                     <p class="price">₫3.000.000</p>
                                     <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
                                     <p class="sum-product">đã bán 2k</p>
+                                </footer>
+                            </div>
+                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" hl-col l-2 m-3 c-6">
+                    <a href="#">
+                        <div class="product-item">
+                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                <div class="product-item__ticke-top">Yêu Thích</div>
+                                <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                <div class="product-item__ticke-right"></div>
+                                <div class="product-item__ticke-bottom"></div>
+                            </div>
+                            <div class="des__item">
+                                <p class="des__product">
+                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                </p>
+                                <footer>
+                                    <p class="price">₫7.000.000</p>
+                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                    <p class="sum-product">đã bán 6k</p>
                                 </footer>
                             </div>
                             <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
@@ -643,9 +698,74 @@
 
             </div>
 
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"><i class=" pagination-icon fas fa-chevron-left"></i></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">1</a>
+                </li>
+                <li class="pagination-item  ">
+                    <a href="" class="pagination-link pagination-link-active">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">5</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">...</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">30</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">31</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link">32</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"><i class="fas fa-chevron-right"></i></a>
+                </li>
+            </ul>
+            <!-- <ul class="pagination">
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="" class="pagination-link"></a>
+                </li>
+            </ul> -->
+
         </div>
         <footer class="footer">
-
+            by: Lê Việt Hoàng
         </footer>
     </div>
 
