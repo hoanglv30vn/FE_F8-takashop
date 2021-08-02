@@ -44,6 +44,7 @@
     #search {
         display: flex;
         justify-content: flex-end;
+        max-width: 70%;
     }
     .modal-popup .modal-login {
         width: 80%;

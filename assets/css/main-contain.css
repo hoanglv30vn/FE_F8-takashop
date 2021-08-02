@@ -85,6 +85,7 @@
     }
     
     .ticker-love .product-item__ticke-top {
+        /* add class .ticker-love --> sticker item product */
         display: block;
         width: 86px;
         font-size: 1.5rem;
@@ -102,6 +103,7 @@
     }
     
     .ticker-discount .product-item__ticke-left {
+        /* add class .ticker-discount --> sticker item product */
         display: block;
         width: 100px;
         font-size: 1.5rem;
