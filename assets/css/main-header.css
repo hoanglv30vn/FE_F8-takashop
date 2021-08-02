@@ -15,7 +15,7 @@
         width: 100%;
         position: fixed;
         margin-top: -124px;
-        z-index: 2;
+        z-index: 6;
         background-image: linear-gradient( -180deg, #2d46f5, #2dabf5);
     }
     
@@ -246,10 +246,10 @@
     }
     /* modal Login */
     
-    .modal-login {
+    .modal-popup {
+        display: none;
         z-index: 99;
         font-size: 1.5rem;
-        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -258,15 +258,15 @@
         background-color: rgba(0, 0, 0, 0.5);
     }
     
-    .modal-login i {
+    .modal-popup i {
         font-size: 2.5rem;
     }
     
-    .modal-login.modal-show {
+    .modal-popup.modal-show {
         display: block;
     }
     
-    .modal-login .modal {
+    .modal-popup .modal-login {
         width: 40%;
         height: 80vh;
         background-color: white;
@@ -276,7 +276,7 @@
         animation: modalOpen ease 0.5s;
     }
     
-    .modal-login .close-modal {
+    .modal-popup .close-modal {
         position: absolute;
         top: 0;
         right: 0px;
@@ -285,12 +285,12 @@
         cursor: pointer;
     }
     
-    .modal-login .close-modal:hover {
+    .modal-popup .close-modal:hover {
         background-color: rgba(253, 253, 253, 0.5);
         color: black;
     }
     
-    .modal-login .heding-modal {
+    .modal-popup .heding-modal {
         background-image: linear-gradient( -180deg, #2d46f5, #2dabf5);
         font-size: 30px;
         font-weight: 300;
@@ -301,28 +301,28 @@
         padding: 44px;
     }
     
-    .modal-login .body-modal {
+    .modal-popup .body-modal {
         margin: 1rem 4rem;
         display: flex;
         flex-direction: column;
     }
     
-    .modal-login .body-modal>input {
+    .modal-popup .body-modal>input {
         padding: 10px 10px;
         font-size: 1.5rem;
         margin: 1rem 0;
     }
     
-    .modal-login .body-modal p {
+    .modal-popup .body-modal p {
         margin: -18px 0px;
         cursor: pointer;
     }
     
-    .modal-login .body-modal p:hover {
+    .modal-popup .body-modal p:hover {
         opacity: 0.8;
     }
     
-    .modal-login .btn-pay {
+    .modal-popup .btn-pay {
         height: 48px;
         margin: 26px 0;
         border: none;
@@ -333,10 +333,14 @@
         cursor: pointer;
     }
     
-    .modal-login .login-with {
+    .modal-popup .login-with {
         margin-top: 4rem;
         display: flex;
         justify-content: space-between;
+    }
+    
+    .login-with .login-with-text {
+        display: inline-block;
     }
     
     .IFLxoy {
@@ -384,7 +388,7 @@
             transform: translateY(0);
         }
     }
-    /* logo */
+    /* logo-taka-taka */
     
     .header-with-search {
         display: flex;
@@ -393,12 +397,22 @@
         height: 92px;
     }
     
-    .header-with-search .logo {
-        display: flex;
-        justify-content: center;
+    .btn-menu-header {
+        margin-left: 50%;
+        background: transparent;
+        border: none;
+        padding: 4px;
+        margin-left: 50%;
+        display: none;
     }
     
-    .header-with-search .logo img {
+    .header-with-search .logo-taka {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+    
+    .header-with-search .logo-taka img {
         width: 100px;
     }
     /* search */
@@ -412,6 +426,9 @@
         align-items: center;
         padding: 4px 16px;
         position: relative;
+        justify-content: flex-end;
+        overflow: hidden;
+        margin-right: -20px;
     }
     
     #search {
@@ -480,7 +497,7 @@
         line-height: 4rem;
         cursor: default;
         opacity: 0.5;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     /* cart */
     
@@ -502,6 +519,7 @@
         padding: 12px;
         display: inline;
         cursor: pointer;
+        margin-left: -20%;
     }
     
     .header-with-search .icon-cart-wrap:hover .popup-content {
@@ -536,6 +554,17 @@
         color: #666;
         box-shadow: 1px 1px 4px 0px #333;
         cursor: default;
+    }
+    
+    .icon-cart .notify-cart footer {
+        position: absolute;
+        bottom: 0;
+        padding: 8px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        white-space: nowrap;
+        border-top: 1px solid #aaf;
     }
     
     .popup .notify-cart::before {

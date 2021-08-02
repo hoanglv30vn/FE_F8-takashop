@@ -32,14 +32,24 @@
     .header-with-search .logo {
         display: none;
     }
+    .logo-taka .btn-menu-header {
+        display: block;
+    }
     .hide-on-mobile {
         display: none;
     }
-    .header-with-search {
-        justify-content: flex-end;
-    }
     .icon-cart .notify-cart {
         max-width: 50vw;
+    }
+    #search {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .modal-popup .modal-login {
+        width: 80%;
+    }
+    .login-with .login-with-text {
+        display: none;
     }
 }
 

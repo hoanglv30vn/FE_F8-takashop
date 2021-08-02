@@ -2,6 +2,10 @@
         margin-top: 124px;
     }
     
+    .menu-contain {}
+    
+    .product-contain {}
+    
     .contain_product-list {}
     
     .product-item {
@@ -19,7 +23,7 @@
     .product-item::before {
         content: "";
         float: left;
-        padding-top: 160%;
+        padding-top: 180%;
     }
     
     .product-item__product-diff {
@@ -138,6 +142,16 @@
         font-size: 2rem;
         font-weight: 500;
         margin: 0 12px 8px 12px;
+    }
+    
+    .product-rating {
+        font-size: 1.2rem;
+        color: #ffd900;
+        display: flex;
+        margin: 0 12px;
+        justify-content: flex-end;
+        /* float: right; */
+        /* text-shadow: 0 0 1px 10px #333; */
     }
     
     .product-item .sum-product {

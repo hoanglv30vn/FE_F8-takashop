@@ -118,11 +118,14 @@
 
             <!-- begin search and logo -->
             <div class=" hl-row no-gutters header-with-search">
-                <div class="hl-col l-2 m-3 c-0 logo ">
-                    <a href="#"> <img src="./assets/img/taka-white.png" alt="logo-taka"></a>
+                <div class="hl-col l-2 m-3 c-1 logo-taka ">
+                    <button id="header__menu" class="btn-menu-header">
+                        <i  class=" icon-menu fas fa-bars"></i>
+                    </button>
+                    <a class="logo" href="#"> <img src="./assets/img/taka-white.png" alt="logo-taka"></a>
                 </div>
                 <div class="header-search hl-col l-8 m-7 c-8">
-                    <input type="text" id="search" placeholder="TAKA - chống dịch không lo về giá" name="search">
+                    <input type="text" id="search" placeholder="TAKA" name="search">
                     <div class="icon-search"><i class="fas fa-search"></i></div>
                     <ul class="history-search">
                         <li>Lót chuột</li>
@@ -132,7 +135,7 @@
                         <li>Samsung</li>
                     </ul>
                 </div>
-                <div class="icon-cart notify popup hl-col l-2 m-2 c-3">
+                <div class="icon-cart notify popup hl-col l-2 m-2 c-2">
                     <div class="icon-cart-wrap  ">
                         <!-- <i class="icon-cart-yes fas fa-circle"></i> -->
                         <i class="icon-cart-none fas fa-shopping-cart">
@@ -142,6 +145,7 @@
                             <p>Giỏ hàng trống</p>
                             <p>loading ...</p>
                             <p>:))</p>
+                            <footer>Xem giỏ hàng</footer>
                         </div>
                     </div>
                 </div>
@@ -151,562 +155,738 @@
         </div>
         <!-- end header -->
         <div class="contain">
-            <div class="contain_product-list hl-row ">
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style=" background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-discount">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
-                        </div>
-                    </a>
+            <div class="contain_product-list hl-row">
+                <div class="menu-contain hl-col l-2 m-3 c-0">
+                    hello
                 </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2 ticker-love ticker-discount">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                <div class="product-contain hl-col l-10 m-9 c-12">
+                    <div class="hl-row">
+
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style=" background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-discount">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2 ticker-love ticker-discount">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2 ticker-discount">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-love">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2 ticker-discount">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-love">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-love">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1 ticker-love">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
-                                </p>
-                                <footer>
-                                    <p class="price">₫7.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
-                                    <p class="sum-product">đã bán 6k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class=" hl-col l-2 m-3 c-6">
-                    <a href="#">
-                        <div class="product-item">
-                            <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
-                                <div class="product-item__ticke-top">Yêu Thích</div>
-                                <div class="product-item__ticke-left">Giảm giá 90%</div>
-                                <div class="product-item__ticke-right"></div>
-                                <div class="product-item__ticke-bottom"></div>
-                            </div>
-                            <div class="des__item">
-                                <p class="des__product">
-                                    Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
-                                </p>
-                                <footer>
-                                    <p class="price">₫3.000.000</p>
-                                    <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
-                                    <p class="sum-product">đã bán 2k</p>
-                                </footer>
-                            </div>
-                            <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham2.jpg);" class="img__item imgsp2">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Corsair K100 RGB - HÀNG CHÍNH HÃNG
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫7.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> TP. HCM</p>
+                                            <p class="sum-product">đã bán 6k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class=" hl-col l-2-4 m-4 c-6">
+                            <a href="#">
+                                <div class="product-item">
+                                    <div style="background-image: url(./assets/img/sanpham1.jpg);" class="img__item imgsp1">
+                                        <div class="product-item__ticke-top">Yêu Thích</div>
+                                        <div class="product-item__ticke-left">Giảm giá 90%</div>
+                                        <div class="product-item__ticke-right"></div>
+                                        <div class="product-item__ticke-bottom"></div>
+                                    </div>
+                                    <div class="des__item">
+                                        <p class="des__product">
+                                            Bàn phím Bluetooth không dây HP 10 inch/ chuột không dây trọng lượng nhẹ cho điện thoại / iPad nhiều màu sắc tùy chọn
+                                        </p>
+                                        <footer>
+                                            <p class="price">₫3.000.000</p>
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="place-product"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+                                            <p class="sum-product">đã bán 2k</p>
+                                        </footer>
+                                    </div>
+                                    <div class="product-item__product-diff">Tìm sản phẩm tương tự</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
-
             <ul class="pagination">
                 <li class="pagination-item">
                     <a href="" class="pagination-link"><i class=" pagination-icon fas fa-chevron-left"></i></a>
@@ -750,8 +930,8 @@
     </div>
 
     <!-- modal login -->
-    <div class="modal-login ">
-        <div class="modal">
+    <div class="modal-popup ">
+        <div class="modal-login">
             <div class="js-modal-close close-modal">
                 <i class="far fa-times-circle"></i>
             </div>
@@ -768,9 +948,18 @@
                         <div class="line-spearator"></div>
                     </div>
                     <div class="login-with">
-                        <button class="login-with-btn opacity--8"> <i class="fab fa-facebook"></i> Facebook</button>
-                        <button class="login-with-btn opacity--8"> <i class="fab fa-google"></i> Google</button>
-                        <button class="login-with-btn opacity--8"> <i class="fab fa-apple"></i> Apple</button>
+                        <button class="login-with-btn opacity--8"> 
+                            <i class="fab fa-facebook"></i>
+                            <span class="login-with-text">Facebook</span>
+                        </button>
+                        <button class="login-with-btn opacity--8"> 
+                            <i class="fab fa-google"></i>
+                            <span class="login-with-text">Google</span>
+                        </button>
+                        <button class="login-with-btn opacity--8">
+                            <i class="fab fa-apple"></i> 
+                            <span class="login-with-text">Apple</span>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -782,9 +971,14 @@
         </div>
 
     </div>
+
+    <div class="modal-popup ">
+        <div class="modal-menu"></div>
+    </div>
     <script>
+        const btnMenu = document.getElementById('header__menu')
         const btnLogins = document.querySelectorAll('.js-btnLogin')
-        const modal = document.querySelector('.modal-login')
+        const modal = document.querySelector('.modal-popup')
         const modalClose = document.querySelector('.js-modal-close')
 
         function showModalLogin() {
@@ -796,11 +990,18 @@
             // alert('hoang')
             modal.classList.remove('modal-show')
         }
+
+        function menu() {
+            modal.classList.add('modal-show')
+        }
         for (btnLogin of btnLogins) {
             btnLogin.addEventListener('click', showModalLogin)
         }
         // btnLogin.addEventListener('click', showModalLogin)
         modalClose.addEventListener('click', closeModal)
+        btnMenu.onclick = function() {
+            menu()
+        };
     </script>
 </body>
 
