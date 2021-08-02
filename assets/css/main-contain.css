@@ -2,7 +2,24 @@
         margin-top: 124px;
     }
     
-    .menu-contain {}
+    .menu-contain {
+        background-image: linear-gradient( 120deg, #2d46f5, #2dabf5);
+    }
+    
+    .menu-list {
+        list-style: none;
+        font-size: 2rem;
+        line-height: 3rem;
+        /* white-space: nowrap; */
+        padding: 2px 12px;
+        color: var(--white-color);
+    }
+    
+    .menu-item {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px solid #9999998a;
+    }
     
     .product-contain {}
     
