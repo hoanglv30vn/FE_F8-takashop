@@ -437,11 +437,16 @@
         color: var(--white-color);
         display: flex;
         padding: 16px 12px;
+        justify-content: center;
+        width: 100%;
+        /* text-align: center; */
         border-bottom: 1px solid #78ffec;
     }
     
     .modal-menu .user-menu .name-user-menu {
         font-size: 1.7rem;
+        /* display: inline-block; */
+        /* margin-top: -1px; */
     }
     
     .modal-menu .user-menu .img-user {
