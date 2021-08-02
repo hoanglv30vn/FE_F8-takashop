@@ -246,7 +246,8 @@
     }
     /* modal Login */
     
-    .modal-popup {
+    .modal-popup,
+    .modal-popup-menu {
         display: none;
         z-index: 99;
         font-size: 1.5rem;
@@ -262,13 +263,15 @@
         font-size: 2.5rem;
     }
     
+    .modal-popup-menu.modal-show,
     .modal-popup.modal-show {
         display: block;
     }
     
     .modal-popup .modal-login {
-        width: 40%;
+        width: 50%;
         height: 80vh;
+        min-height: 460px;
         background-color: white;
         box-shadow: 0 0 4px 0 #333;
         margin: 6vh auto 0 auto;
@@ -278,7 +281,7 @@
     
     .modal-popup .close-modal {
         position: absolute;
-        top: 0;
+        top: 0px;
         right: 0px;
         padding: 12px;
         color: white;
@@ -387,6 +390,69 @@
             opacity: 1;
             transform: translateY(0);
         }
+    }
+    
+    @keyframes modalMenuOpen {
+        from {
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    /* modal menu */
+    
+    .modal-popup-menu .modal-menu {
+        width: 70%;
+        height: 80vh;
+        /* min-height: 460px; */
+        background-color: white;
+        box-shadow: 0 0 4px 0 #333;
+        margin: 0;
+        position: relative;
+        animation: modalMenuOpen ease 0.5s;
+        background-image: linear-gradient( 120deg, #2d46f5, #2dabf5);
+    }
+    
+    .menu-button {
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    .menu-button .menu__btn-log {
+        width: 50%;
+        padding: 12px;
+        background-color: #78ffec;
+        border: none;
+        box-shadow: 0px -1px 1px 1px #999;
+    }
+    
+    .modal-menu .user-menu {
+        color: var(--white-color);
+        display: flex;
+        padding: 16px 12px;
+        border-bottom: 1px solid #78ffec;
+    }
+    
+    .modal-menu .user-menu .name-user-menu {
+        font-size: 1.7rem;
+    }
+    
+    .modal-menu .user-menu .img-user {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 3rem;
+        margin-right: 12px;
+        border: 1px solid #333;
     }
     /* logo-taka-taka */
     

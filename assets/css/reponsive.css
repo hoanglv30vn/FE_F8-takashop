@@ -14,6 +14,9 @@
         max-width: 80%;
         padding: 0 8px;
     }
+    .login-with .login-with-text {
+        display: none;
+    }
 }
 
 
@@ -48,9 +51,7 @@
     }
     .modal-popup .modal-login {
         width: 80%;
-    }
-    .login-with .login-with-text {
-        display: none;
+        min-height: 460px;
     }
 }
 
