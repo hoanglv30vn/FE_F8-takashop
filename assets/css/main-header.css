@@ -411,6 +411,7 @@
         background-color: white;
         align-items: center;
         padding: 4px 16px;
+        position: relative;
     }
     
     #search {
@@ -422,16 +423,66 @@
         padding: 0 26px;
     }
     
+    #search:focus~.history-search {
+        display: block;
+    }
+    
     .header-with-search .icon-search {
         font-size: 2rem;
-        padding: 0 16px;
+        padding: 6px 16px;
+        line-height: 1.5rem;
         color: var( --color-base);
     }
     
     .header-with-search .icon-search:hover {
-        opacity: 0.7;
+        background-color: var(--color-base);
+        color: var(--white-color);
         cursor: pointer;
     }
+    /* history search */
+    
+    .header-with-search .history-search {
+        display: none;
+        overflow: hidden;
+        list-style: none;
+        width: 70%;
+        color: var(--text-color);
+        background-color: white;
+        margin: 4px 0 0 0;
+        padding: 0px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        z-index: 4;
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 0 #666;
+    }
+    
+    .header-with-search .history-search li {
+        padding: 6px 0 6px 12px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .header-with-search .history-search li:hover {
+        /* opacity: 0.8; */
+        color: #ffff;
+        background-color: #8d8d8d;
+        cursor: pointer;
+    }
+    
+    .header-with-search .history-search::before {
+        content: "Lịch sử tìm kiếm";
+        padding: 0px 12px;
+        line-height: 4rem;
+        cursor: default;
+        opacity: 0.5;
+        font-size: 1.7rem;
+    }
+    /* cart */
     
     .header-with-search .icon-cart {
         width: 250px;
@@ -439,15 +490,21 @@
         font-size: 3.2rem;
         color: white;
         text-align: center;
-        cursor: pointer;
+        /* cursor: pointer; */
         /* display: flex; */
     }
     
-    .header-with-search .icon-cart:hover {
+    .header-with-search .icon-cart-wrap:hover {
         color: hsla(0, 0%, 100%, 0.8);
     }
     
-    .header-with-search .icon-cart:hover .popup-content {
+    .icon-cart-wrap {
+        padding: 12px;
+        display: inline;
+        cursor: pointer;
+    }
+    
+    .header-with-search .icon-cart-wrap:hover .popup-content {
         display: block;
     }
     
@@ -478,6 +535,7 @@
         font-size: 2rem;
         color: #666;
         box-shadow: 1px 1px 4px 0px #333;
+        cursor: default;
     }
     
     .popup .notify-cart::before {
