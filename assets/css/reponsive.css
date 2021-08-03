@@ -53,6 +53,10 @@
         width: 80%;
         min-height: 460px;
     }
+    .menu-list {
+        overflow-y: scroll;
+        height: calc(100% - 120px);
+    }
 }
 
 
